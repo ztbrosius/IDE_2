@@ -2,14 +2,15 @@ public class Electric {
     //setup variable
     private String carName;
     private Double financePayment;
-    private Double costPerMile;
+    private Double milesPerGallonEquivalent;
+    private double totalMonthlyCost;
 
     //create constructor
-    public Electric(String carName, Double financePayment, Double costPerMile){
+    public Electric(String carName, Double financePayment, Double milesPerGallonEquivalent){
 
         this.carName = carName;
         this.financePayment = financePayment;
-        this.costPerMile = costPerMile;
+        this.milesPerGallonEquivalent = milesPerGallonEquivalent;
 
     } // ends constructor
 
@@ -27,9 +28,14 @@ public class Electric {
     }
 
     //costPerMile
-    public void setCostPerMile(double mileageCost){costPerMile = mileageCost;}
+    public void setCostPerMile(double mileageCost){milesPerGallonEquivalent = mileageCost;}
     public double getCostPerMile(){
-        return costPerMile;
+        return milesPerGallonEquivalent;
+    }
+
+    public void setTotalMonthlyCost(double totalCostPerMonth){totalMonthlyCost = totalCostPerMonth;}
+    public double getTotalMonthlyCost(){
+        return financePayment + totalMonthlyCost;
     }
 
 }// ends Electric class

@@ -19,15 +19,18 @@ public class Main {
         double costPerGallon;
         double costPerMile;
         int milesPerWeek;
-        double gasCalc;
-        double electricCalc;
+        double gasPerMonth;
+        double electricPerMonth;
         double milesPerMonth;
-        int WEEK_IN_MONTH = 4;
+        double monthlyCost;
+        double WEEK_IN_MONTH = 4.345;
 
         // scanner so user can input data
         Scanner input = new Scanner(System.in);
 
-        //output
+        //output for user input
+        System.out.println("Welcome to Electric vs Gas Car Modeling App - OOP Version");
+        System.out.println("You will need to enter details about gas costs, electricity costs, and how many miles you drive weekly");
         System.out.println("******************");
         System.out.println("How much is gas per gallon? ");
         costPerGallon = input.nextDouble();
@@ -36,12 +39,35 @@ public class Main {
         System.out.println("How many miles do you drive a week? ");
         milesPerWeek = input.nextInt();
         System.out.println("Gas: " + costPerGallon + "\nElectricity: " + costPerMile + "\nMiles: " + milesPerWeek);
+        System.out.println("**** Calculation Results ***");
+
+        // set up the cars
+        Gas car1 = new Gas("2020 Chevrolet Corvette", 1692.00, 19.00);
+        Gas car2 = new Gas("2015 Ford F-150", 397.00, 17.00);
+        Gas car3 = new Gas("2022 Subaru BRZ", 581.00, 22.00);
+        Electric car4 = new Electric("2023 Mercedes-Benz EQS SUV", 1779.00, 78.00);
+        Electric car5 = new Electric("2023 Rivian R1S", 1944.00, 71.00);
+        Electric car6 = new Electric("2021 Porsche Taycan", 1782.00, 79.00);
 
         // perform calculations
-        gasCalc = costPerGallon * milesPerWeek;
-        electricCalc = costPerMile * milesPerWeek;
         milesPerMonth = milesPerWeek * WEEK_IN_MONTH;
+        gasPerMonth = costPerGallon * milesPerMonth;
+        electricPerMonth = costPerMile * milesPerMonth;
 
+        // each cars monthly cost
+        double car1Monthly = car1.getFinancePayment() + (gasPerMonth / car1.getMilesPerGallon());
+        double car2Monthly = car2.getFinancePayment() + (gasPerMonth / car2.getMilesPerGallon());
+        double car3Monthly = car3.getFinancePayment() + (gasPerMonth / car3.getMilesPerGallon());
+        double car4Monthly = car4.getFinancePayment() + electricPerMonth;
+        double car5Monthly = car5.getFinancePayment() + electricPerMonth;
+        double car6Monthly = car6.getFinancePayment() + electricPerMonth;
 
+        //output car details
+        System.out.println(car1.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car1Monthly));
+        System.out.println(car2.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car2Monthly));
+        System.out.println(car3.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car3Monthly));
+        System.out.println(car4.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car4Monthly));
+        System.out.println(car5.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car5Monthly));
+        System.out.println(car6.getCarName() + " Total Monthly Costs: $" + DECIMAL_FORMAT.format(car6Monthly));
     }// ends main method
 } // end Main class

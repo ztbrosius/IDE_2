@@ -3,14 +3,17 @@ public class Gas {
     private String carName;
     private double financePayment;
     private double milesPerGallon;
-    private double costPerGallon;
+    private  double monthlyCost;
+//    private double costPerGallon;
 
     // set up constructor
-    public  Gas(String carName, double financePayment, double milesPerGallon, double costPerGallon){
+//    public  Gas(String carName, double financePayment, double milesPerGallon, double costPerGallon){
+    public  Gas(String carName, double financePayment, double milesPerGallon){
         this.carName = carName;
         this.financePayment = financePayment;
         this.milesPerGallon = milesPerGallon;
-        this.costPerGallon = costPerGallon;
+
+//        this.costPerGallon = costPerGallon;
     }// ends constructor
 
     // begin getter and setter
@@ -34,10 +37,10 @@ public class Gas {
 
 
     //costPerGallon
-    public void setCostPerGallon(double gallonCost){costPerGallon = gallonCost;}
-    public double getCostPerGallon(){
-        return costPerGallon;
-    }
+//    public void setCostPerGallon(double gallonCost){costPerGallon = gallonCost;}
+//    public double getCostPerGallon(){
+//        return costPerGallon;
+//    }
 
 
 }// ends Gas class

@@ -1,0 +1,20 @@
+gas
+2020 Chevrolet Corvette; MPG = 19; finance payment = 1,692 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/chevrolet/corvette/2020/vin/1G1Y82D49L5116432/
+
+2015 Ford F-150; MPG = 17; finance payment = 397 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/ford/f-150/2015/vin/1FTEW1EF0FFB67116/
+
+2022 Subaru BRZ; MPG = 22; finance payment = 581 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/subaru/brz/2022/vin/JF1ZDBE15N9703336/
+
+
+electric
+2023 Mercedes-Benz EQS SUV; finance payment = 1,779 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/mercedes-benz/eqs-suv/2023/vin/4JGDM2EBXPA005122/
+
+2023 Rivian R1S; finance payment = 1,944 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/rivian/r1s/2023/vin/7PDSGABA4PN010245/
+
+2021 Porsche Taycan; finance payment = 1,782 (5-year loan, $0 trade in with $0 down, 700-750 credit)
+https://www.edmunds.com/porsche/taycan/2021/vin/WP0AB2Y17MSA42962/
